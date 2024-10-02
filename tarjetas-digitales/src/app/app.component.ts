@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { TarjetaComponent } from './tarjeta/tarjeta.component'; // Asegúrate de que la ruta sea correcta
 
 @Component({
   selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css'],
+  standalone: true, // Aquí indicamos que es un componente standalone
+  imports: [TarjetaComponent] // Importa el componente Tarjeta aquí
 })
 export class AppComponent {
   title = 'tarjetas-digitales';

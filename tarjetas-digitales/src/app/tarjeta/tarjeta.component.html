@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño tarjeta digital</title>
+    <link rel="stylesheet" href="tarjeta.component.css">
+</head>
+<body>
+    <div class="container">
+        <div class="profile-box">
+            <img src="assets/img/logo-circular-digital.png" class="perfil">
+            <img src="assets/img/setting.png" class="setting-icon">
+            <img src="assets/img/menu.png" class="menu-icon">
+            <div class="contenido">
+                <h2>{{ nombre }}</h2>
+                <p>{{ cargo }}</p>
+                <p>{{ direccion }}</p>
+                <p>{{ telefono }}</p>
+            </div>
+            <div class="qr-container">
+                <img [src]="qrCodeUrl" alt="QR Code" class="qr-code">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+    
