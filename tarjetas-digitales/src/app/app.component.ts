@@ -3,9 +3,9 @@ import { TarjetaComponent } from './tarjeta/tarjeta.component'; // Asegúrate de
 
 @Component({
   selector: 'app-root',
+  standalone: true, // Aquí indicamos que es un componente standalone
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
-  standalone: true, // Aquí indicamos que es un componente standalone
   imports: [TarjetaComponent] // Importa el componente Tarjeta aquí
 })
 export class AppComponent {
