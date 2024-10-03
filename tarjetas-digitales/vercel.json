@@ -1,17 +1,14 @@
 {
   "builds": [
     {
-      "src": "frontend/package.json",
-      "use": "@vercel/static-build",
-      "config": {
-        "distDir": "frontend/dist/tarjetas-digitales"
-      }
+      "src": "package.json",
+      "use": "@vercel/node"
     }
   ],
-  "rewrites": [
+  "routes": [
     {
-      "source": "/(.*)",
-      "destination": "/"
+      "src": "/(.*)",
+      "dest": "dist/tarjetas-digitales/server/server.mjs"
     }
   ]
 }
